@@ -6,7 +6,7 @@ directory node['aws_ecs_agent']['log_folder'] do
 end
 
 docker_container 'ecs-agent' do
-  image 'amazon/aws_ecs_agent'
+  image 'amazon/amazon-ecs-agent'
   env ['ECS_LOGFILE=/log/ecs-agent.log',
        "ECS_LOGLEVEL=#{node['aws_ecs_agent']['log_level']}",
        "ECS_CLUSTER=#{node['aws_ecs_agent']['cluster_name']}",
