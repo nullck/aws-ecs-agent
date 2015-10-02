@@ -9,7 +9,7 @@ docker_container 'ecs-agent' do
   image 'amazon/aws_ecs_agent'
   env ['ECS_LOGFILE=/log/ecs-agent.log',
        "ECS_LOGLEVEL=#{node['aws_ecs_agent']['log_level']}",
-       "ECS_CLUSTER=#{node['aws_ecs_agent']['cluster']}",
+       "ECS_CLUSTER=#{node['aws_ecs_agent']['cluster_name']}",
        "AWS_ACCESS_KEY_ID=#{node['aws_ecs_agent']['aws_access_key_id']}",
        "AWS_SECRET_ACCESS_KEY=#{node['aws_ecs_agent']['aws_secret_access_key']}"
       ]

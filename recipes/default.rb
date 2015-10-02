@@ -6,5 +6,5 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-include_recipe 'docker'
-include_recipe 'aws-ecs-agent::docker_install'
+include_recipe "docker"
+include_recipe "aws-ecs-agent::docker_install"

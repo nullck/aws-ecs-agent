@@ -1,8 +1,8 @@
 default['aws_ecs_agent']['log_folder'] = "/var/log/ecs"
-default['aws_ecs_agent']['user'] = 'docker'
-default['aws_ecs_agent']['log_file'] = 'ecs-agent.log'
+default['aws_ecs_agent']['user'] = "docker"
+default['aws_ecs_agent']['log_file'] = "ecs-agent.log"
 default['aws_ecs_agent']['log_level'] = nil
-default['aws_ecs_agent']['cluster_name'] = 'default'
+default['aws_ecs_agent']['cluster_name'] = "default"
 default['aws_ecs_agent']['aws_access_key_id'] = nil
 default['aws_ecs_agent']['aws_secret_access_key'] = nil
 default['aws_ecs_agent']['port'] = '51678:51678'
