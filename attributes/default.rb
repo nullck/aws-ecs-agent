@@ -1,4 +1,4 @@
-['aws_ecs_agent']['log_folder'] = '/var/log/ecs'
+['aws_ecs_agent']['log_folder'] = "/var/log/ecs"
 ['aws_ecs_agent']['user'] = 'docker'
 ['aws_ecs_agent']['log_file'] = 'ecs-agent.log'
 ['aws_ecs_agent']['log_level'] = nil
