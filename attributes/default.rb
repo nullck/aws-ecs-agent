@@ -1,0 +1,9 @@
+['aws_ecs_agent']['log_folder'] = '/var/log/ecs'
+['aws_ecs_agent']['user'] = 'docker'
+['aws_ecs_agent']['log_file'] = 'ecs-agent.log'
+['aws_ecs_agent']['log_level'] = nil
+['aws_ecs_agent']['cluster_name'] = 'default'
+['aws_ecs_agent']['aws_access_key_id'] = nil
+['aws_ecs_agent']['aws_secret_access_key'] = nil
+['aws_ecs_agent']['port'] = '51678:51678'
+['aws_ecs_agent']['tag'] = 'v1.0.0'
