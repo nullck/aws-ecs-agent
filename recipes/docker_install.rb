@@ -16,7 +16,7 @@ docker_container 'ecs-agent' do
   volume ["#{node['aws_ecs_agent']['log_folder']}:/log",
           '/var/run/docker.sock:/var/run/docker.sock'
          ]
-  port '51678:51678'
+  port "#{node['aws_ecs_agent']['port']}"
   cmd_timeout 120
   detach true
   tag node['aws_ecs_agent']['tag']
