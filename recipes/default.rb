@@ -9,5 +9,10 @@
 include_recipe "docker"
 # so != amazon_linux; then
 
-include_recipe "aws-ecs-agent::docker_install"
-include_recipe "aws-ecs-agent::launch_docker"
+case node['platform_family']
+when 'debian'
+	include_recipe "aws-ecs-agent::docker_install"
+	include_recipe "aws-ecs-agent::launch_docker"
+when 'rhel'
+	include_recipe "aws-ecs-agent::install_agent_rhel"
+end
