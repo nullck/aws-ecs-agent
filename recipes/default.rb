@@ -6,13 +6,13 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-include_recipe "docker"
+include_recipe 'docker'
 # so != amazon_linux; then
 
 case node['platform_family']
 when 'debian'
-	include_recipe "aws-ecs-agent::docker_install"
-	include_recipe "aws-ecs-agent::launch_docker"
+	include_recipe 'aws-ecs-agent::docker_install'
+	include_recipe 'aws-ecs-agent::launch_docker'
 when 'rhel'
-	include_recipe "aws-ecs-agent::install_agent_rhel"
+	include_recipe 'aws-ecs-agent::install_agent_rhel'
 end
